@@ -1,0 +1,8 @@
+1. Event-by-event, fit timing distribution with two gaussians (how good is it?)
+2. Save in TTree with starting position, starting direction, starting time (anything else?)
+3. Look at it.
+   A. Is distribution fairly consistent?
+   B. Can I understand/model distribution in a simple way?
+      i. Like: first peak->distance to AV,
+               second peak->distance to AV, reflected to PSUP
+                            width corresponds to angle of approach to PSUP

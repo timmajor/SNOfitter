@@ -1,0 +1,6 @@
+1. Fit time to a gaussian
+2. Event-by-event, only keep pmts within time window
+3. For true cone shape, plot pmt(theta)
+4. Similar event-to-event?
+5. Are there similar categories?
+6. Can I make a simple model?

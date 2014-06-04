@@ -1,0 +1,19 @@
+void conemacro(){
+  gROOT->ProcessLine(".L BayesGaussianFloat4.C+");
+/*  TFile *myfile = new TFile("testCC_new.root","read");*/
+  TFile *myfile = new TFile("<INPUTFILE>","read");
+  Bool_t floating[11]={kTRUE, kTRUE, kTRUE, kTRUE, kTRUE, kFALSE, kTRUE, kFALSE, kFALSE, kFALSE, kFALSE};
+/*{Use_T, Use_P, Dir, Pos, Intensity, Alpha, useFlat, useLeslie, Angle, ConeAngle, LightSpeed}*/
+  cout << "started" << endl;
+  BayesGauss(myfile, 0, <NUMBEROFEVENTS>, floating);
+/*  cout << "first call" << endl;
+  floating[0]=kFALSE;
+  BayesGauss(myfile, 10, floating);
+  cout << "second call" << endl;
+  floating[1]=kFALSE;
+  floating[0]=kTRUE;
+  BayesGauss(myfile, 10, floating);
+  cout << "last call" << endl;
+*/
+  myfile->Close();
+}
